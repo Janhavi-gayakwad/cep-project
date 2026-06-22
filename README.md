@@ -38,7 +38,7 @@ Run index.html in your browser
 
 All project screenshots can be found in the Screenshots Folder:
 
-👉 https://github.com/Janhavi-gayakwad/cep/tree/main/screenshots
+👉 [https://github.com/Janhavi-gayakwad/cep/tree/main/screenshots](https://github.com/Janhavi-gayakwad/cep-project/tree/main/screenshot)
 
 
 🎓 Use Case
