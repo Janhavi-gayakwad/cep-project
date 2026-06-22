@@ -31,10 +31,15 @@ Sevatric/
 
 Download or clone the repository:
 
-git clone https://github.com/your-username/sevatric.git
+git clone https://github.com/Janhavi-gayakwad/sevatric.git
 Open the project folder
 Run index.html in your browser
-([Web-link](http://127.0.0.1:5500/Sevatric/hello.html))
+📸 Screenshots
+
+All project screenshots can be found in the Screenshots Folder:
+
+👉 https://github.com/Janhavi-gayakwad/cep/tree/main/screenshots
+
 
 🎓 Use Case
 Students looking for scholarships
