@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Schemes</title>
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  /* General page styling */
+  body, html {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Header styling */
+  h1 {
+    color: white;
+    font-size: 40px;
+    transition: color 0.3s, text-shadow 0.3s;
+    margin: 20px 0;
+  }
+
+  /* Hover effect for the h1 header */
+  h1:hover {
+    color:#60B3D1;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Container for the scheme boxes */
+  .scheme-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible layout */
+    gap: 30px; /* Space between boxes */
+    width: 90%; /* Full width, with slight padding */
+    max-width: 1200px; /* Limit to prevent excessive stretching */
+    padding: 30px;
+  }
+
+  /* Individual scheme box styling */
+  .scheme-box {
+    background-color:#023E8A;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Hover effect with shading */
+  .scheme-box:hover {
+    background-color: #60B3D1 ;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  /* Title inside each scheme box */
+  .scheme-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s, text-shadow 0.3s;
+    margin-top: 10px;
+  }
+
+  /* Icon styling inside each scheme box */
+  .scheme-icon {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+
+  /* Different colors for each icon */
+  .financial-icon { color: #FFD700; } /* Gold */
+  .female-icon { color: #FF69B4; } /* Pink */
+  .agriculture-icon { color: #32CD32; } /* Lime Green */
+  .education-icon { color: #1E90FF; } /* Dodger Blue */
+  .business-icon { color: #FF8C00; } /* Dark Orange */
+  .housing-icon { color: #8A2BE2; } /* Blue Violet */
+  .health-icon { color: #FF4500; } /* Orange Red */
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .scheme-container {
+      grid-template-columns: 1fr; /* Stack boxes in a single column on small screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Explore Schemes</h1>
+
+<div class="scheme-container">
+  <a href="p4.html" class="scheme-box">
+    <i class="fas fa-piggy-bank scheme-icon financial-icon"></i>
+    <div class="scheme-title">Financial Services and Insurance</div>
+  </a>
+  <a href="p3.html" class="scheme-box">
+    <i class="fas fa-child scheme-icon female-icon"></i>
+    <div class="scheme-title">Female and Kids</div>
+  </a>
+  <a href="p1.html" class="scheme-box">
+    <i class="fas fa-seedling scheme-icon agriculture-icon"></i>
+    <div class="scheme-title">Agriculture</div>
+  </a>
+  <a href="p7.html" class="scheme-box">
+    <i class="fas fa-graduation-cap scheme-icon education-icon"></i>
+    <div class="scheme-title">Education</div>
+  </a>
+  <a href="p5.html" class="scheme-box">
+    <i class="fas fa-briefcase scheme-icon business-icon"></i>
+    <div class="scheme-title">Business and Entrepreneurship</div>
+  </a>
+  <a href="p2.html" class="scheme-box">
+    <i class="fas fa-home scheme-icon housing-icon"></i>
+    <div class="scheme-title">Housing and Shelter</div>
+  </a>
+  <a href="p6.html" class="scheme-box">
+    <i class="fas fa-heartbeat scheme-icon health-icon"></i>
+    <div class="scheme-title">Health and Awareness</div>
+  </a>
+</div>
+
+</body>
+</html>

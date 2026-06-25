@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round Corner Rectangular Box with Hover Effects</title>
+  <style>
+    /* Set the background color of the entire page with a black gradient */
+    body {
+      background: linear-gradient(to bottom, #000000, #333333); /* Black shading gradient */
+      color: white; /* White text to make it readable */
+      font-family: Arial, sans-serif; /* A clean font for better appearance */
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Center content vertically and horizontally */
+      text-align: center;
+    }
+
+    /* Wrapper for main box and additional boxes */
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    /* Main box styling */
+    .main-box {
+      width: 300px;
+      height: 100px;
+      background-color: #133e87;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px; /* Increased font size */
+      font-weight: bold; /* Bold text */
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    /* Hover effect for main box */
+    .main-box:hover {
+      background-color: #0f2a5b;  /* Slightly darker blue */
+      transform: scale(1.05); /* Slightly bigger on hover */
+    }
+
+    /* Container for the additional boxes */
+    .box-container {
+      display: none;
+      flex-direction: column;
+      gap: 50px;
+      opacity: 0; /* Make it invisible initially */
+      transition: opacity 0.3s ease;
+    }
+
+    /* Styling for the additional boxes */
+    .small-box {
+      width: 500px;
+      height: 90px;
+      background-color: #2565ae;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px; /* Increased font size */
+      font-weight: bold; /* Bold text */
+      transition: background-color 0.3s, box-shadow 0.3s;
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    /* Hover effect for additional boxes */
+    .small-box:hover {
+      background-color: #3c99dc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="main-box" onclick="toggleBoxes()" aria-expanded="false" id="mainBox"><b>CASTE</b></div>
+
+    <div class="box-container" id="boxContainer">
+      <a href="scheme.html" class="small-box">General</a>
+      <a href="scheme1.html" class="small-box">Other Backward Class (OBC)</a>
+      <a href="scheme2.html" class="small-box">Scheduled Caste (SC)</a>
+      <a href="scheme3.html" class="small-box">Scheduled Tribe (ST)</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleBoxes() {
+      const boxContainer = document.getElementById('boxContainer');
+      const mainBox = document.getElementById('mainBox');
+      const isVisible = boxContainer.style.display === 'flex';
+
+      // Toggle display property with smooth transition
+      if (isVisible) {
+        boxContainer.style.display = 'none';
+        boxContainer.style.opacity = 0;
+        boxContainer.style.transform = 'scale(0.95)';
+        mainBox.setAttribute('aria-expanded', 'false');
+      } else {
+        boxContainer.style.display = 'flex';
+        setTimeout(() => { 
+          boxContainer.style.opacity = 1; 
+          boxContainer.style.transform = 'scale(1)'; 
+        }, 10); // Delay to apply opacity and scale transition
+        mainBox.setAttribute('aria-expanded', 'true');
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+

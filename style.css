@@ -1,0 +1,139 @@
+body {
+    margin: 0; /* Remove default margin */
+    background-image: url(background.JPG); /* Path to your main background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* Default text color */
+    position: relative; /* For overlay positioning */
+    min-height: 100vh; /* Ensure body covers the full viewport height */
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+.logo {
+    max-width: 50px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.site-name {
+    font-size: 30px; /* Adjust font size as needed */
+    margin-left: 10px; /* Space between logo and text */
+    color: black; /* Change color as needed */
+    font-weight: bold; /* Make the text bold */
+    line-height: 50px; /* Center vertically with the logo */
+}
+
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(254, 254, 254, 0.8); /* Semi-transparent background */
+    padding: 5px 0; /* Increase vertical padding for more height */
+    width: 100%; /* Ensure the nav bar takes full width of the viewport */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+}
+
+.nav-links {
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox to align items in a row */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Add some space between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Change link color for contrast */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Change color on hover (gold) */
+}
+
+.center {
+    text-align: center; /* Center text within the section */
+    margin-top: 50px; /* Add some top margin for spacing */
+}
+
+.center h1 {
+    font-size: 59px; /* Adjust size as needed */
+    margin: 20px 0; /* Margin for spacing */
+    color: #000105; /* White color for contrast against background */
+}
+.text-box {
+    background-color:#0595f5f6; /* Semi-transparent background */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the box and add vertical spacing */
+    max-width: 250px; /* Limit width for readability */
+}
+
+.text-box p {
+    color: #333; /* Text color */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+
+.text-box a {
+    background-color:#0595f5f6; ; /* Button background color */
+    color: rgb(2, 2, 2); /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 10px; /* Rounded corners for button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.text-box a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for space */
+    position: relative; /* Change to relative positioning */
+    margin-top:350px; /* Space above the footer */
+    width: 100%; /* Full width */
+}
+
+.footer-content a {
+    color: #f2ff00; /* Gold color for the link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.footer-content a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+/*about section*/
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .nav-links ul {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Make links full width */
+    }
+    .nav-links li {
+        margin: 10px 0; /* Add vertical space between links */
+    }
+}
+
+
+
+
+
